@@ -1,3 +1,13 @@
+<?php
+session_start();
+require "./db/config.php";
+if(isset($_SESSION['user_id'])){
+    $autorizeUser=true;
+}else{
+    $autorizeUser=false;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +29,7 @@
 </head>
 
 <body class="bg-[#FAFAFA]">
+   
     <!-- navbar section -->
     <div class="navbar flex justify-center items-start pt-2 translate-y-2">
         <nav class="w-[88vw] px-4 py-1 flex flex-wrap items-center justify-between">
@@ -60,20 +71,31 @@
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#" class="text-gray-700 hover:text-blue-700">Featured</a>
                 <a href="#" class="text-gray-700 hover:text-blue-700">Resources</a>
-                <a href="./forms/login.php" class="text-gray-700 hover:text-blue-700">Login</a>
+                <?php echo ($autorizeUser) ? '<a href="./dashboard/user_dashboard.php" class="text-gray-700 hover:text-blue-700">Dashboard</a>
+                    <a href="./forms/logout.php"
+                    class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Log out
+                    </a>':                
+                '<a href="./forms/login.php" class="text-gray-700 hover:text-blue-700">Login</a>
                 <a href="./forms/signup.php"
                     class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Sign
                     Up</a>
+                '?>
             </div>
 
             <!-- Mobile Navigation Links (hidden by default) -->
             <div id="mobile-menu" class="mobile-menu mt-2 w-full flex-col items-start  md:hidden">
                 <a href="#" class="text-gray-700 hover:text-blue-700 w-full py-1">Featured</a>
                 <a href="#" class="text-gray-700 hover:text-blue-700 w-full py-1">Resources</a>
+
+                <?php echo ($autorizeUser) ? '<a href="./dashboard/user_dashboard" class="text-gray-700 hover:text-blue-700 w-full py-1">Dashboard</a>
+                    <a href="./forms/logout.php"
+                    class="bg-blue-500 hover:bg-blue-700 mt-2 text-white px-4 py-1 rounded-full w-full text-center">Log out
+                    </a>':'
                 <a href="./forms/login.php" class="text-gray-700 hover:text-blue-700 w-full py-1">Login</a>
                 <a href="./forms/signup.php"
                     class="bg-blue-500 hover:bg-blue-700 mt-2 text-white px-4 py-1 rounded-full w-full text-center">Sign
-                    Up</a>
+                    Up</a>'
+                ?>;
             </div>
         </nav>
 

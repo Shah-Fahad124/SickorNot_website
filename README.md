@@ -1,1 +1,1 @@
-# SickorNot project
+# SickorNot_website project
