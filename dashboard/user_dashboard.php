@@ -1,11 +1,14 @@
 <?php
 session_start();
 require "../db/config.php";
-if(isset($_SESSION['user_id'])){
+if(isset($_SESSION['user_email'])){
     $autorizeUser=true;
 }else{
     $autorizeUser=false;
 }
+$query = "SELECT * FROM user_register WHERE user_email = '{$_SESSION['user_email']}'";
+$result = mysqli_query($conn, $query);
+$row = mysqli_fetch_assoc($result);
 ?>
 
 <!DOCTYPE html>
@@ -74,12 +77,13 @@ if(isset($_SESSION['user_id'])){
             <a href="../index.php" class="text-gray-700 hover:text-blue-700">Home</a>
                 <a href="#" class="text-gray-700 hover:text-blue-700">Featured</a>
                 <a href="#" class="text-gray-700 hover:text-blue-700">Resources</a>
-                <?php echo ($autorizeUser) ? '<a href="./dashboard/user_dashboard.php" class="text-gray-700 hover:text-blue-700">Dashboard</a>
-                    <a href="./forms/logout.php"
+
+                <?php echo ($autorizeUser) ?'
+                    <a href="../forms/logout.php"
                     class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Log out
                     </a>':                
-                '<a href="./forms/login.php" class="text-gray-700 hover:text-blue-700">Login</a>
-                <a href="./forms/signup.php"
+                '<a href="../forms/login.php" class="text-gray-700 hover:text-blue-700">Login</a>
+                <a href="../forms/signup.php"
                     class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Sign
                     Up</a>
                 '?>
@@ -137,8 +141,8 @@ if(isset($_SESSION['user_id'])){
     <!-- Main Content -->
     <main class="flex-1 overflow-auto p-6">
       <div class="max-w-6xl mx-auto">
-        <h1 class="text-2xl font-bold mb-1">Users</h1>
-        <p class="text-gray-600 mb-6">View and manage users</p>
+        <h1 class="text-2xl font-bold mb-1"><?php echo ($autorizeUser)?"$row[user_firstname] $row[user_lastname]":"User"?></h1>
+        <p class="text-gray-600 mb-6">View and manage your account</p>
 
         <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
           <div class="relative w-full md:w-96">

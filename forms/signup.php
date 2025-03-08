@@ -78,8 +78,9 @@
                 </script>';
         }
         else {
-        $hash_password = password_hash( $password, PASSWORD_BCRYPT);      
-            $query = "INSERT INTO user_register (user_firstname, user_lastname, user_email, user_password) VALUES ('$first_name', '$last_name','$email', 'hash_password')";
+        $hash_password = password_hash( $password, PASSWORD_BCRYPT); 
+     
+            $query = "INSERT INTO user_register (user_firstname, user_lastname, user_email, user_password) VALUES ('$first_name', '$last_name','$email', '$hash_password')";
             $execute = mysqli_query($conn, $query);
             $_SESSION['success'] = "registration successful";
             if ($execute) {
