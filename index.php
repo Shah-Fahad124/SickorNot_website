@@ -14,7 +14,7 @@ if (isset($_SESSION['user_email'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SickorNot.io</title>
+    <title>SickorNot .AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -114,9 +114,9 @@ if (isset($_SESSION['user_email'])) {
                 </div>
                 <div class="ml-4 flex flex-col">
                     <span class="font-semibold text-gray-800 text-md">SickorNot<span
-                            class="text-blue-500">.io</span></span>
+                            class="text-blue-500"> .AI</span></span>
                     <div class="bg-gray-700 text-white text-sm flex justify-center w-10 rounded-t ">
-                        beta
+                         
                     </div>
                 </div>
             </div>
@@ -435,7 +435,7 @@ if (isset($_SESSION['user_email'])) {
 
 
         <div class="w-[60vw] mx-auto py-10 md:h-[50vh]  flex items-center justify-center text-center">
-            <h1 class="text-[18px] md:text-[22px] text-[#453553 ]"><b>SickorNot.io</b> helps you check your health
+            <h1 class="text-[18px] md:text-[22px] text-[#453553 ]"><b>SickorNot .AI</b> helps you check your health
                 status in just a few clicks. Using AI-powered image analysis, our system detects signs of sickness and
                 provides instant health insights to keep you informed</h1>
         </div>
@@ -455,7 +455,7 @@ if (isset($_SESSION['user_email'])) {
             </div>
         </div>
         <div class="second w-[90%] lg:w-[45vw] h-[30vh] flex items-center ">
-            <h1 class="text-[50px] text-white py-5">SickorNot.io</h1>
+            <h1 class="text-[50px] text-white py-5">SickorNot .AI</h1>
         </div>
         <div class="third w-[90vw] flex flex-col gap-1">
             <div class="h-[30vh] flex justify-end items-center w-[45%]">
@@ -472,7 +472,7 @@ if (isset($_SESSION['user_email'])) {
     <!-- how it works -->
     <!-- <section class="w-100vw space-y-[4rem]">
         <div class="title flex flex-col justify-center items-center h-[50vh] pt-[5rem]">
-            <h1 class="text-[#453553] text-[38px] font-semibold">How <b>SickorNot.io</b> works</h1>
+            <h1 class="text-[#453553] text-[38px] font-semibold">How <b>SickorNot .AI</b> works</h1>
             <p class="text-[1.2rem] text-gray-500 font-semibold">Four steps only</p>
         </div>
         <div class="step_1 w-[70%] mx-auto flex items-end">
@@ -576,11 +576,11 @@ if (isset($_SESSION['user_email'])) {
 
                             <div
                                 class="absolute -right-6 bottom-2 rotate-[-10deg] bg-[#2d2241] text-white px-2 py-0.5 text-xs rounded border border-white">
-                                beta</div>
+                                 </div>
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h2 class="text-2xl font-bold text-white">SickorNot<span class="text-gray-300">.io</span></h2>
+                        <h2 class="text-2xl font-bold text-white">SickorNot<span class="text-gray-300"> .AI</span></h2>
                         <p class="text-gray-300 text-sm font-medium">AI Health Checker</p>
                     </div>
 
@@ -614,7 +614,7 @@ if (isset($_SESSION['user_email'])) {
                                 class="underline">Privacy Policy</a> and <a href="" class="underline">Terms of
                                 Service</a> apply</p>
                         <div class="mt-5 flex gap-4">
-                            <span class="text-white">© 2022 - <span id="c_year">2025</span> SickorNot.io</span>
+                            <span class="text-white">© 2022 - <span id="c_year">2025</span> SickorNot .AI</span>
                         </div>
 
                     </div>

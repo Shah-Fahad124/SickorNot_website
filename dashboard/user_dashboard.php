@@ -58,9 +58,9 @@ $row = mysqli_fetch_assoc($result);
                 </div>
                 <div class="ml-4 flex flex-col">
                     <span class="font-semibold text-gray-800 text-md">SickorNot<span
-                            class="text-blue-500">.io</span></span>
+                            class="text-blue-500"> .AI</span></span>
                     <div class="bg-gray-700 text-white text-sm flex justify-center w-10 rounded-t ">
-                        beta
+                         
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@ $row = mysqli_fetch_assoc($result);
     <main class="flex-1 overflow-auto p-6">
       <div class="max-w-6xl mx-auto">
         <h1 class="text-2xl font-bold mb-1"><?php echo ($autorizeUser) ? "$row[user_firstname] $row[user_lastname]" : "User" ?></h1>
-        <p class="text-gray-600 mb-6">View and manage your account</p>
+        <p class="text-gray-600 mb-6">View Images with Results</p>
 
         <div class="flex flex-col md:flex-row justify-between gap-4 mb-6">
           <div class="relative w-full md:w-96">
@@ -164,7 +164,7 @@ $row = mysqli_fetch_assoc($result);
               </button>
             </div>
             <button class="px-4 py-2 text-sm text-white bg-blue-500 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-              Create user
+              Create Link
             </button>
           </div>
         </div>

@@ -100,7 +100,7 @@
                 <div class="w-full max-w-md mx-auto">
                     <div class="text-center pt-2">
                         <h2 class="text-3xl font-bold text-gray-800">Create account</h2>
-                        <p class="mt-2 text-gray-600">Create an account for SickorNot.io</p>
+                        <p class="mt-2 text-gray-600">Create an account for SickorNot .AI</p>
                     </div>
 
                     <div class="mt-6 space-y-4">
