@@ -95,19 +95,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 };
 ?>
    
-    <div class="flex h-[90vh] w-[60vw] overflow-hidden rounded-lg shadow-xl mx-auto m-6">
-        <!-- Left Section with Yellow Background and Image -->
-        <div class="relative flex items-center justify-center w-1/2 bg-yellow-400">
-            <div class="relative text-center">
-                <img src="../images/auth_logo_2x_ecgesw.avif" alt="Welcome" class="w-48 h-52 mx-auto">
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-yellow-400 px-4 py-1 font-bold text-xl">
-                    WELCOME
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Section with Form -->
-        <div class="flex flex-col items-center justify-cent w-1/2 bg-white p-8">
+    <div class="flex h-[100vh] w-[60vw] mx-auto justify-center items-center">
+        <div class="flex flex-col h-[90vh] items-center shadow-xl justify-center bg-white rounded-lg p-8">
             <div class="w-full max-w-md space-y-5">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-800">Login account</h2>

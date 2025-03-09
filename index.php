@@ -425,7 +425,7 @@ if (isset($_SESSION['user_email'])) {
             <div class="w-full md:w-2/5 flex items-center justify-center">
                 <div class="bg-blue-500 rounded-lg p-4 w-full h-full max-h-[300px] md:max-h-none flex items-center justify-center">
                     <img 
-                        src="./images/happy.jpeg" 
+                        src="./images/normal.jpeg" 
                         alt="Person smiling" 
                         class="h-auto max-h-full object-contain"
                     >
@@ -448,27 +448,27 @@ if (isset($_SESSION['user_email'])) {
 
     <!-- input output section  -->
     <section class="w-full py-2 md:py-[4rem] bg-blue-500 flex flex-col items-center">
-        <div class="first w-[50%] flex items-center md:justify-end gap-3">
-            <div class="h-[30vh] flex items-end">
-                <img class="transform rotate-[150deg] pr-2" src="./images/arrow1_white.svg" alt="">
+        <div class="first w-[50%] h-[50vh] flex items-center justify-end gap-5">
+            <div class="h-[50vh] w-[50%] flex items-end justify-end">
+                <img class="transform w-[50%] rotate-[150deg] pr-2" src="./images/arrow1_white.svg" alt="">
             </div>
-            <div class="h-full relative flex justify-center lg:justify-end">
+            <div class="h-full w-[25vw]  relative flex justify-end">
                 <button
-                    class="px-1 md:px-3 absolute  text-[#453553] bg-white rounded-sm md:text-[1.4rem] bottom-[14%] -left-6 md:-left-1">input</button>
-                <img class="rounded-md w-[60%] lg:w-[75%]" src="./images/input_2x_zwzs0a.avif" alt="">
+                    class="px-1 md:px-3 absolute  text-[#453553] bg-white rounded-sm md:text-[1.4rem] bottom-[6%] -left-4 ">input</button>
+                <img class="rounded-md w-full" src="./images/input_man.jpg" alt="">
             </div>
         </div>
-        <div class="second w-[90%] lg:w-[45vw]">
-            <h1 class="text-[50px] text-white py-2">SickorNot.io</h1>
+        <div class="second w-[90%] lg:w-[45vw] h-[30vh] flex items-center ">
+            <h1 class="text-[50px] text-white py-5">SickorNot.io</h1>
         </div>
-        <div class="third w-[60vw] flex gap-1">
-            <div class="h-full flex justify-end items-start lg:w-[70%]">
-                <img class="transform rotate-[20deg]" src="./images/arrow1_white.svg" alt="">
+        <div class="third w-[90vw] flex flex-col gap-1">
+            <div class="h-[30vh] flex justify-end items-center w-[45%]">
+                <img class="transform w-[30%] scale-x-[-1] rotate-[300deg]" src="./images/arrow1_white.svg" alt="">
             </div>
-            <div class="h-full relative flex justify-end items-start w-[50]">
+            <div class="h-[50vh] w-[30%] bg-yellow-500 relative flex items-start w-[50]">
                 <button
-                    class="px-1 md:px-4 absolute  text-[#453553] bg-white rounded-sm md:text-[1.4rem] -top-3 left-2">output</button>
-                <img class="rounded-md h-full w-full" src="./images/output_2x_beni4y.avif" alt="">
+                    class="px-1 md:px-4 absolute  text-[#453553] bg-white rounded-sm md:text-[1.4rem] -top-3 right-2">output</button>
+                <img class="rounded-md h-full w-full" src="./images/output_man.jpg" alt="">
             </div>
         </div>
     </section>
