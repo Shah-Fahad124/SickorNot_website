@@ -39,61 +39,60 @@ $row = mysqli_fetch_assoc($result);
 </head>
 
 <body class="w-screen h-screen flex flex-col bg-gray-50">
-  <div class="navbar flex justify-center items-start pt-2 border-b-2">
-    <nav class="w-[88vw] px-4 py-1 flex flex-wrap items-center justify-between">
-      <!-- Logo Section -->
-      <div class="flex items-center">
-        <div class=" h-20">
-          <div class="rounded-full h-16 w-16  flex items-center justify-center relative">
-            <div class="bg-blue-500 hover:bg-blue-700 rounded-full overflow-hidden">
-              <img class="object-cover" src="../images/third.jpg" class="" alt="header-logo" />
+ <!-- navbar section -->
+ <div class="navbar flex justify-center items-center pt-2 border-b">
+        <nav class="w-[88vw] px-4 py-1 flex flex-wrap items-center justify-between">
+            <!-- Logo Section -->
+            <div class="flex py-4">
+                <div class="">
+                    <div class="flex items-center justify-center relative">
+                        <div class=" overflow-hidden  w-[9rem]">
+                            <img class="object-cover" src="../images/logo.png" class="" alt="header-logo" />
+                        </div>
+                        <!-- blue plus icon -->
+                        <div
+                            class="absolute flex justify-center items-center -bottom-1 -right-1 bg-blue-500 hover:bg-blue-700 rounded-full h-3 w-3 p-0">
+                            <h1 class="m-0 text-white text-[1.5rem] leading-none pb-1"><a href="">+</a></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-4 flex flex-col">
+                    <span class="font-semibold text-gray-800 text-md">SickorNot<span
+                            class="text-blue-500">.io</span></span>
+                    <div class="bg-gray-700 text-white text-sm flex justify-center w-10 rounded-t ">
+                        beta
+                    </div>
+                </div>
             </div>
-            <!-- blue plus icon -->
-            <div
-              class="absolute flex justify-center items-center -bottom-1 -right-1 bg-blue-500 hover:bg-blue-700 rounded-full h-6 w-6 p-0">
-              <h1 class="m-0 text-white text-[1.5rem] leading-none pb-1"><a href="">+</a></h1>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
-          </div>
-        </div>
-        <div class="ml-4 flex flex-col">
-          <span class="font-semibold text-gray-800 text-lg">SickorNot<span
-              class="text-blue-500">.io</span></span>
-          <div class="bg-gray-700 text-white  flex justify-center w-12 rounded-t ">
-            beta
-          </div>
-        </div>
-      </div>
 
-      <!-- Mobile menu button -->
-      <div class="md:hidden">
-        <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-700 focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Desktop Navigation Links -->
-      <div class="hidden md:flex items-center space-x-6">
-        <a href="../index.php" class="text-gray-700 hover:text-blue-700">Home</a>
-
-        <?php echo ($autorizeUser) ? '
-                    <a href="../forms/logout.php"
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center space-x-6">
+                <?php echo ($autorizeUser) ? '<a href="../index.php" class="text-gray-700 hover:text-blue-700">Home</a>
+                    <a href="./forms/logout.php"
                     class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Log out
                     </a>' :
-          '<a href="../forms/login.php" class="text-gray-700 hover:text-blue-700">Login</a>
-                <a href="../forms/signup.php"
+                    '<a href="./forms/login.php" class="text-gray-700 hover:text-blue-700">Login</a>
+                <a href="./forms/signup.php"
                     class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Sign
                     Up</a>
                 ' ?>
-      </div>
+            </div>
 
-      <!-- Mobile Navigation Links (hidden by default) -->
-      <div id="mobile-menu" class="mobile-menu mt-2 w-full flex-col items-start  md:hidden">
+            <!-- Mobile Navigation Links (hidden by default) -->
+            <div id="mobile-menu" class="mobile-menu mt-2 w-full flex-col items-start  md:hidden">
 
-        <?php echo ($autorizeUser) ? '<a href="./dashboard/user_dashboard" class="text-gray-700 hover:text-blue-700 w-full py-1">Dashboard</a>
+                <?php echo ($autorizeUser) ? '<a href="../index.php" class="text-gray-700 hover:text-blue-700 w-full py-1">Home</a>
                     <a href="./forms/logout.php"
                     class="bg-blue-500 hover:bg-blue-700 mt-2 text-white px-4 py-1 rounded-full w-full text-center">Log out
                     </a>' : '
@@ -101,11 +100,11 @@ $row = mysqli_fetch_assoc($result);
                 <a href="./forms/signup.php"
                     class="bg-blue-500 hover:bg-blue-700 mt-2 text-white px-4 py-1 rounded-full w-full text-center">Sign
                     Up</a>'
-        ?>;
-      </div>
-    </nav>
+                ?>;
+            </div>
+        </nav>
 
-  </div>
+    </div>
 
   <!-- Breadcrumb -->
   <!-- <div class="flex items-center px-10 py-3 bg-white border-b border-gray-200 text-4xl text-blue-500 gap-2">

@@ -96,26 +96,26 @@ if (isset($_SESSION['user_email'])) {
 <body class="bg-[#FAFAFA]">
 
     <!-- navbar section -->
-    <div class="navbar flex justify-center items-start pt-2 translate-y-2">
+    <div class="navbar flex justify-center items-center pt-2 translate-y-2">
         <nav class="w-[88vw] px-4 py-1 flex flex-wrap items-center justify-between">
             <!-- Logo Section -->
-            <div class="flex items-center">
-                <div class=" h-20">
-                    <div class="rounded-full h-16 w-16  flex items-center justify-center relative">
-                        <div class="bg-blue-500 hover:bg-blue-700 rounded-full overflow-hidden">
-                            <img class="object-cover" src="./images/third.jpg" class="" alt="header-logo" />
+            <div class="flex py-4">
+                <div class="">
+                    <div class="flex items-center justify-center relative">
+                        <div class=" overflow-hidden  w-[9rem]">
+                            <img class="object-cover" src="./images/logo.png" class="" alt="header-logo" />
                         </div>
                         <!-- blue plus icon -->
                         <div
-                            class="absolute flex justify-center items-center -bottom-1 -right-1 bg-blue-500 hover:bg-blue-700 rounded-full h-6 w-6 p-0">
+                            class="absolute flex justify-center items-center -bottom-1 -right-1 bg-blue-500 hover:bg-blue-700 rounded-full h-3 w-3 p-0">
                             <h1 class="m-0 text-white text-[1.5rem] leading-none pb-1"><a href="">+</a></h1>
                         </div>
                     </div>
                 </div>
                 <div class="ml-4 flex flex-col">
-                    <span class="font-semibold text-gray-800 text-lg">SickorNot<span
+                    <span class="font-semibold text-gray-800 text-md">SickorNot<span
                             class="text-blue-500">.io</span></span>
-                    <div class="bg-gray-700 text-white  flex justify-center w-12 rounded-t ">
+                    <div class="bg-gray-700 text-white text-sm flex justify-center w-10 rounded-t ">
                         beta
                     </div>
                 </div>
@@ -273,7 +273,7 @@ if (isset($_SESSION['user_email'])) {
                             class="w-10 h-10 rounded-full border-2 border-white object-cover">
                         <img src="./images/second.jpg" alt="Sample profile"
                             class="w-10 h-10 rounded-full border-2 border-white object-cover">
-                        <img src="./images/third.jpg" alt="Sample profile"
+                        <img src="./images/logo.png" alt="Sample profile"
                             class="w-10 h-10 rounded-full border-2 border-white object-cover">
                     </div>
                   </div> -->
@@ -537,7 +537,7 @@ if (isset($_SESSION['user_email'])) {
                             <img src="./images/second.jpg" alt="Sample profile 2" class="w-full h-full object-cover">
                         </div>
                         <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
-                            <img src="./images/third.jpg" alt="Sample profile 3" class="w-full h-full object-cover">
+                            <img src="./images/logo.png" alt="Sample profile 3" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
