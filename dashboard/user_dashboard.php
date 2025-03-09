@@ -43,7 +43,7 @@ $row = mysqli_fetch_assoc($result);
                 <div class=" h-20">
                     <div class="rounded-full h-16 w-16  flex items-center justify-center relative">
                         <div class="bg-blue-500 hover:bg-blue-700 rounded-full overflow-hidden">
-                            <img class="object-cover" src="../images/third.jpg" class="" alt="header-logo" />
+                            <img class="object-cover" src="../images/logo.png" class="" alt="header-logo" />
                         </div>
                         <!-- blue plus icon -->
                         <div

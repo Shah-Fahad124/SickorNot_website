@@ -103,7 +103,7 @@ if (isset($_SESSION['user_email'])) {
                 <div class=" h-20">
                     <div class="rounded-full h-16 w-16  flex items-center justify-center relative">
                         <div class="bg-blue-500 hover:bg-blue-700 rounded-full overflow-hidden">
-                            <img class="object-cover" src="./images/third.jpg" class="" alt="header-logo" />
+                            <img class="object-cover" src="./images/logo.png" class="" alt="header-logo" />
                         </div>
                         <!-- blue plus icon -->
                         <div
@@ -277,7 +277,7 @@ if (isset($_SESSION['user_email'])) {
                             class="w-10 h-10 rounded-full border-2 border-white object-cover">
                         <img src="./images/second.jpg" alt="Sample profile"
                             class="w-10 h-10 rounded-full border-2 border-white object-cover">
-                        <img src="./images/third.jpg" alt="Sample profile"
+                        <img src="./images/logo.png" alt="Sample profile"
                             class="w-10 h-10 rounded-full border-2 border-white object-cover">
                     </div>
                   </div> -->
@@ -541,7 +541,7 @@ if (isset($_SESSION['user_email'])) {
                             <img src="./images/second.jpg" alt="Sample profile 2" class="w-full h-full object-cover">
                         </div>
                         <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-white">
-                            <img src="./images/third.jpg" alt="Sample profile 3" class="w-full h-full object-cover">
+                            <img src="./images/logo.png" alt="Sample profile 3" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
