@@ -134,8 +134,6 @@ if (isset($_SESSION['user_email'])) {
 
             <!-- Desktop Navigation Links -->
             <div class="hidden md:flex items-center space-x-6">
-                <a href="#" class="text-gray-700 hover:text-blue-700">Featured</a>
-                <a href="#" class="text-gray-700 hover:text-blue-700">Resources</a>
                 <?php echo ($autorizeUser) ? '<a href="./dashboard/user_dashboard.php" class="text-gray-700 hover:text-blue-700">Dashboard</a>
                     <a href="./forms/logout.php"
                     class="bg-blue-500 border hover:bg-white hover:text-blue-500 hover:border-blue-500  text-white px-2 py-[2px] rounded-full">Log out
@@ -149,8 +147,6 @@ if (isset($_SESSION['user_email'])) {
 
             <!-- Mobile Navigation Links (hidden by default) -->
             <div id="mobile-menu" class="mobile-menu mt-2 w-full flex-col items-start  md:hidden">
-                <a href="#" class="text-gray-700 hover:text-blue-700 w-full py-1">Featured</a>
-                <a href="#" class="text-gray-700 hover:text-blue-700 w-full py-1">Resources</a>
 
                 <?php echo ($autorizeUser) ? '<a href="./dashboard/user_dashboard" class="text-gray-700 hover:text-blue-700 w-full py-1">Dashboard</a>
                     <a href="./forms/logout.php"
